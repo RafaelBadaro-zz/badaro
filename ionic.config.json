@@ -1,0 +1,7 @@
+{
+  "name": "birthdayCard",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
