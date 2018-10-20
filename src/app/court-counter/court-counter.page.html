@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>CourtCounter</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h1>Team A</h1>
+        <h1>{{this.basket.placarTeamA}}</h1>
+      </ion-col>
+      <ion-col>
+        <h1>Team B</h1>
+        <h1>{{this.basket.placarTeamB}}</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button size="small" (click)="this.basket.addTimeA(3)">+3 POINTS</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button size="small" (click)="this.basket.addTimeB(3)">+3 POINTS</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button size="small" (click)="this.basket.addTimeA(2)">+2 POINTS</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button size="small" (click)="this.basket.addTimeB(2)">+2 POINTS</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button size="small" (click)="this.basket.addTimeA(1)">FREE THROW</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button size="small" (click)="this.basket.addTimeB(1)">FREE THROW</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row justify-content-center>
+      <ion-button size="small" href="/Result">RESULT</ion-button>
+    </ion-row>
+    <ion-row justify-content-center>
+      <ion-button size="small" (click)="this.basket.reset()">RESET</ion-button>
+    </ion-row>
+
+
+  </ion-grid>
+</ion-content>
